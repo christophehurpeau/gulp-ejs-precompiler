@@ -1,0 +1,19 @@
+{
+  "name": "gulp-ejs-precompiler",
+  "description": "A plugin for gulp that precompiles ejs templates",
+  "keywords": ["gulp", "gulpplugin", "ejs"],
+  "version": "0.1.0",
+  "homepage": "https://github.com/christophehurpeau/gulp-ejs-precompiler",
+  "license": "MIT",
+  "author": "Christophe Hurpeau <christophe@hurpeau.com> (http://christophe.hurpeau.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christophehurpeau/gulp-ejs-precompiler.git"
+  },
+
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "through2": "*",
+    "gulp-util": "^2.2.14"
+  }
+}
