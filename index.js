@@ -26,7 +26,7 @@ module.exports = function (options) {
         try {
             var contents = file.contents.toString();
             var compiledFunction = ejs.compile(contents, options).toString();
-            var prefix = templateVarName + '[' + JSON.stringify(file.path.substring(file.base.length, file.path.length - 4)) +'] = ';
+            var prefix = templateVarName + '[' + JSON.stringify(file.relative.slice(0, -4)) +'] = ';
             var suffix = ';'
             compiledFunction = prefix + compiledFunction + suffix;
             file.contents = new Buffer(compiledFunction);

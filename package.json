@@ -6,7 +6,7 @@
     "gulpplugin",
     "ejs"
   ],
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/christophehurpeau/gulp-ejs-precompiler",
   "license": "MIT",
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (http://christophe.hurpeau.com/)",
