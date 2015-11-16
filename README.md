@@ -37,6 +37,7 @@ gulp.task('ejs', function() {
 
 ## Options
 
-- templateVarName (String): the javascript variable name
+- templateVarName (String): the javascript variable name. _Default: templates_
+- fileExtension (String): the template source file extension. _Default: .ejs_
 
 _Others options are directly given to gulp ejs for compilation. See [gulp-ejs](https://www.npmjs.com/package/gulp-ejs) for more information._
