@@ -39,4 +39,4 @@ gulp.task('ejs', function() {
 
 - templateVarName (String): the javascript variable name
 
-_Others options are directly given to gulp ejs for compilation. See [gulp-ejs](https://www.npmjs.com/package/gulp-ejs) for more information._
+_Others options are directly given to ejs for compilation. See [ejs](https://www.npmjs.com/package/ejs#options) for more information._
