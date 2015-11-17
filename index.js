@@ -8,6 +8,9 @@ module.exports = function (options) {
     var templateVarName = options.templateVarName || 'templates';
     delete options.templateVarName;
 
+    var fileExtension = options.fileExtension || '.ejs';
+    delete options.fileExtension;
+
     return through.obj(function (file, enc, next) {
         if (file.isNull()) {
             this.push(file);
@@ -26,14 +29,14 @@ module.exports = function (options) {
         try {
             var contents = file.contents.toString();
             var compiledFunction = ejs.compile(contents, options).toString();
-            var prefix = templateVarName + '[' + JSON.stringify(file.relative.slice(0, -4)) +'] = ';
+            var prefix = templateVarName + '[' + JSON.stringify(file.relative.slice(0, -fileExtension.length)) +'] = ';
             var suffix = ';'
             compiledFunction = prefix + compiledFunction + suffix;
             file.contents = new Buffer(compiledFunction);
             file.path = gutil.replaceExtension(file.path, '.js');
         } catch (err) {
             this.emit('error', new gutil.PluginError('gulp-ejs-precompiler', err));
-         }
+        }
 
         this.push(file);
         next();
