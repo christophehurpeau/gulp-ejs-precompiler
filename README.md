@@ -1,6 +1,8 @@
 gulp-ejs-precompiler
 ====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/christophehurpeau/gulp-ejs-precompiler.svg)](https://greenkeeper.io/)
+
 A plugin for gulp that precompiles ejs templates
 
 
