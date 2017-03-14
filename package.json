@@ -18,8 +18,8 @@
     "url": "https://github.com/christophehurpeau/gulp-ejs-precompiler.git"
   },
   "dependencies": {
-    "ejs": "^1.0.0",
-    "gulp-util": "^2.2.14",
-    "through2": "^0.4.1"
+    "ejs": "^2.5.6",
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3"
   }
 }
